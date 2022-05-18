@@ -1,0 +1,468 @@
+/* todos los estilos css3 */
+div.galerias{
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+div.galerias img{
+  width: 100%;
+}
+div.galerias:hover{
+  border: 1px solid #777;
+  background: yellow;
+}
+div.descripcion{
+  padding: 15px;
+  text-align: center;
+}
+.dropdows{
+  margin-left: -50px;
+  padding: 50px 70px;
+}
+.dropdows-container{
+  position: relative;
+}
+.dropdows-container ul{
+  position: absolute;
+  max-height: 1px;
+  overflow: hidden;
+  transition: all 1s;
+}
+.dropdows-container:hover ul{
+  max-height:400px;
+}
+.neon {
+  /* border-radius: 200px; */
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #2196f3;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 3s;
+}
+.neon2 {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #2196f3;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.fondo_botton_neon {
+  height: 100px;
+  margin: 0;
+  padding: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50vh;
+  background: #031321;
+  font-family: consolas;
+}
+.neon span{
+  position: absolute;
+  display: block;
+}
+.neon span:nth-child(1){
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #2196f3);
+}
+.neon:hover span:nth-child(1){
+  left: 100%;
+  transition: 1s;
+}
+.neon span:nth-child(3){
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #2196f3);
+}
+.neon:hover span:nth-child(3){
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.3s;
+}
+.neon span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #2196f3);
+}
+.neon:hover span:nth-child(2){
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.3s;
+}
+.neon span:nth-child(4){
+  bottom: -100%;
+  left:  0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #2196f3);
+}
+.neon:hover span:nth-child(4){
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+.fondo_botton_neon2 {
+  height: 100px;
+  margin: 0;
+  padding: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50vh;
+  background: #031321;
+  font-family: consolas;
+}
+.neon:hover{
+  color: #255784;
+  background: #2196f3;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 10px #2196f3;
+  transition-delay: 0.1s;
+}
+.neon2 span{
+  position: absolute;
+  display: block;
+}
+.neon2 span:nth-child(1){
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #2196f3);
+}
+.neon2:hover span:nth-child(1){
+  left: 100%;
+  transition: 1s;
+}
+.neon2 span:nth-child(3){
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #2196f3);
+}
+.neon2:hover span:nth-child(3){
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.3s;
+}
+.neon2 span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #2196f3);
+}
+.neon2:hover span:nth-child(2){
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.3s;
+}
+.neon2 span:nth-child(4){
+  bottom: -100%;
+  left:  0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #2196f3);
+}
+.neon2:hover span:nth-child(4){
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+.navbar ul li:hover::before{
+  content: "";
+  height: 3px;
+  width: 100%;
+  background: yellowgreen;
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  transition: 0.01s ease-out;
+}
+.navbar ul li:hover::before {
+  width: 100%;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+
+}
+.navbar {
+  width: 80%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.logo{
+  cursor: pointer;
+  padding-top: -200px;
+  margin-left: -60px;
+  width: 50px;
+  height: 50px;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  background:url(./fondo_leon.jpg);
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+}
+/* img{
+  opacity: 0.9;
+} */
+.formulario .edad:in-range{
+  background: green;
+}
+.formulario .edad:out-of-range{
+  background: red;
+  border: none;
+}
+.formulario .checkbox input:default {
+  box-shadow: 0px 0px 10px 1px black;
+}
+.formulario .radio input:checked {
+  box-shadow: 0px 0px 10px 1px black;
+}
+.formulario .mensaje:required{
+  background: yellow;
+}
+.formulario .correo:invalid{
+  background: red;
+  border: none;
+}
+.formulario .correo:valid{
+  background: green;
+}
+.formulario .id:disabled{
+  background: black;
+}
+.formulario .nombre:focus{
+  border: 3px solid blue;
+}
+.lista4 p:only-of-type{
+  color: white;
+  background: red;
+}
+.lista3 p:only-child{
+  color: white;
+  background: blue;
+}
+.lista2 p:nth-last-of-type(2){
+  color: white;
+  background: orange;
+}
+.lista2 div:nth-last-of-type(2){
+  color: white;
+  background: blue;
+}
+.lista :nth-child(2){
+  color: white;
+  background: red;
+}
+.lista :nth-last-child(3){
+  color: white;
+  background: blue;
+}
+.elementos p:first-of-type{
+  color: white;
+  background: blue;
+}
+.elementos div:first-of-type{
+  color: white;
+  background: black;
+}
+.elementos p:last-of-type{
+  color: white;
+  background: blue;
+}
+.elementos span:first-of-type{
+  color: white;
+  background: orange;
+}
+.elementos div:last-of-type{
+  color: white;
+  background: orange;
+}
+.parrafos p:first-child{
+  color: white;
+  background: blue;
+}
+.parrafos p:last-child{
+  color: white;
+  background: black
+}
+.enlace:active{
+  background: #000;
+}
+.enlace:link{
+  color: : blue;
+}
+.enlace:visited{
+  color: #b1b1b1;
+}
+.enlace:hover{
+  color: orange;
+}
+.float_derecha{
+  float: right;
+}
+.float_izquierda{
+  float: left;
+}
+.overflow{
+  height: 200px;
+  width: 500px;
+  overflow: auto;
+
+}
+.fixed{
+  width:: 40px;
+  height: 40px;
+  background: yellow;
+  position: fixed;
+  left: 90px;
+  top: -10px;
+
+}
+a:link{
+  color: red;
+}
+a:visited{
+  color: green;
+}
+a:hover{
+  color: blue;
+}
+a:active{
+  color: orange;
+}
+h1{
+  font-weight: normal;
+  text-align: center;
+}
+.uno {
+  color: none;
+  font-family: 'Rubik Moonrocks', cursive;
+  font-size: 100%;
+  text-transform: capitalize;
+}
+.dos {
+  color: red;
+  font-family: cursive;
+  text-align: justify;
+  line-height: 20px;
+  text-transform: capitalize;
+  text-shadow: 5px 5px 5px #000;
+}
+.tres{
+  font-family: 'Grape Nuts', cursive;
+  color: green;
+
+}
+.caja{
+  margin: 50px auto;
+  border: 3px solid #000;
+  width: 400 px;
+}
+  .caja{
+    background: silver;
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    border: 20px rgba(0, 0, 0, 0.1) double;
+  }
+
+h1{
+  background: yellow;
+}
+.dotted{
+    margin: 70px;
+    border-style: dotted;
+    border-width: 5px 10px;
+    border-color: red blue black;
+    outline-color: yellow;
+    outline-width: 2px;
+}
+.dashed{
+    border-style: dashed;
+    margin: 16px 20px 25px 18px;
+    padding-left: 100px;
+}
+.solid{
+    border-color: blue;
+    border-radius: 20px;
+    border-style: solid;
+    margin-top: 20px;
+    padding-top: 16px;
+}
+.double {
+    border-color: yellow;
+    border-radius: 10px 2px 40px;
+    border-style: double;
+    border-width: 5px;
+    margin-left: 18px;
+    padding-bottom: 25px;
+
+}
+.groove{
+    border-style: groove;
+    margin-right: 20px;
+}
+.ridge{
+    border-style: ridge;
+    margin-bottom: 25px;
+}
+.inset{
+    border-style: inset;
+    margin-top: 16px;
+    margin-left: 18px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+.outset{
+    border-style: outset;
+    border-color: yellow;
+    padding: 16px 20px 25px 18px;
+}
+.none{
+    border-style: none;
+}
+.hidden{
+    border-style: hidden;
+}
+.mix{
+    border-style: dotted dashed solid double;
+}

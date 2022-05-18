@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Aprendiendo css3</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- navigation bar -->
+  <div class="container">
+    <div class="navbar">
+      <img src="logo_leon.jpg" class="logo" alt="main logo">
+      <ul>
+        <li><a href="#">servicios</a></li>
+        <li><a href="#">precios</a></li>
+        <li><a href="#">nuestro equipo</a></li>
+        <li><a href="#">contactenos</a></li>
+      </ul>
+      </div>
+    </div><br><br>
+  <!-- elemplo de galerias -->
+  <fieldset>
+    <h1>Ejemplo de galerias</h1>
+    <div class="galerias">
+      <a target="_blank" href="fondo_leon.jpg">
+        <img src="fondo_leon.jpg" alt="leon fondo negro" width="200px" height="150px">
+      </a>
+      <div class="descripcion">Leon con fondo negro</div>
+    </div>
+    <div class="galerias">
+      <a target="_blank" href="leon.jpg">
+        <img src="leon.jpg" alt="leon fondo blanco" width="200px" height="150px">
+      </a>
+      <div class="descripcion">Leon con fondo blanco</div>
+    </div>
+    <div class="galerias">
+      <a target="_blank" href="logo_leon.jpg">
+        <img src="logo_leon.jpg" alt="leon" width="200px" height="150px">
+      </a>
+      <div class="descripcion">logo Leon</div>
+    </div>
+  </fieldset><br><br>
+  <!-- ejemplo dropdows -->
+  <fieldset class="dropdows">
+    <h1>Ejemplo de un dropdows</h1><br>
+    <div class="dropdows-container">
+      <span>Mis opciones:</span>
+      <ul>
+        <li>Configuracion</li>
+        <li>Mi perfil</li>
+        <li>Cerrar sesion</li>
+      </ul>
+    </div>
+  </fieldset><br><br>
+
+
+  <!-- boton neon -->
+  <h1>Ejemplo de botonones en neon</h1><br><br>
+  <fieldset class="fondo_botton_neon">
+    <a class="neon" href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Neon Botton
+      <a/>
+  </fieldset><br><br>
+  <fieldset class="fondo_botton_neon2">
+    <a class="neon2" href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Neon Botton bordes
+      <a/>
+  </fieldset><br><br>
+<!-- iconos  -->
+  <span class="material-icons">home</span>
+  <span class="material-icons">search</span>
+  <span class="material-icons">delete</span>
+   <!-- elemento fixed -->
+  <h1 class="fixed">Mi pagina de pruebas editado en css3</h1>
+  <h2 id="element-for-modify" rancio= "sii">Mi primer H2 con css3</h2>
+  <h2 id="element-for-modify">Mi primer H2 con css3</h2>
+  <h2 class="h2-class"><b>Mi primer H2 con css3 <span></span></b></h2>
+  <button type="button" name="button">Sigueme en youtube</button>
+  <input type="text" value="@hola">
+  <div class="caja">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+</div>
+<!-- pseudo clases -->
+<fieldset>
+  <h1>pseudo clases</h1>
+  <h2>pseudo clases para links</h2>
+  <div class="grupo">
+    <label>:active / :link / :visited / :hover</label></label><br>
+    <a class="enlace" href="http://127.0.0.1:3000/">ir a pagina web</a><br>
+    <a class="enlace" href="https://www.google.com">ir a google</a>
+  <h2>pseudo clases para contenedores</h2>
+  <div class="grupo">
+    <label>:first-child / :last-child</label>
+    <div class="parrafos">
+      <p>soy el primer parrafo</p>
+      <p>soy el segundo parrafo</p>
+      <p>soy el tercer parrafo</p>
+    </div>
+  </div>
+  <h2>pseudo clases para contenedores por tipo</h2>
+  <div class="grupo">
+    <label>:first-of-type / :last-of-type</label><br><br>
+    <div class="elementos">
+      <div>hola soy un div!!!</div>
+      <p>hola soy un parrafo!!!!</p>
+      <span>hola soy un span!!!!!</span>
+      <p>hola soy otro parrafo!!!!!</p>
+      <div>hola soy otro div!!!!!!!!!!!</div>
+    </div>
+  </div>
+  <h2>pseudo clases para listas</h2>
+  <div class="grupo">
+    <label>:nth-child() / :nth-last-child</label>
+    <ul class="lista">
+      <li>soy la opcion #1</li>
+      <li>soy la opcion #2</li>
+      <li>Soy la opción #3</li>
+			<li>Soy la opción #4</li>
+			<li>Soy la opción #5</li>
+			<li>Soy la opción #6</li>
+			<li>Soy la opción #7</li>
+			<li>Soy la opción #8</li>
+    </ul>
+  </div>
+  <h2>pseudo clases mescla entre tipo y orden</h2>
+  <div class="grupo">
+			<label>:nth-of-type() / :nth-last-of-type()</label><br><br>
+			<div class="lista2">
+				<div>Hola soy un div!</div>
+				<p>Hola soy un parrafo!</p>
+				<p>Hola soy otro parrafo!</p>
+				<span>Hola soy un span!</span>
+				<p>Hola soy otro parrafo!</p>
+				<div>Hola soy otro div!</div>
+			</div>
+		</div>
+    <h2>pseudo clase</h2>
+    <div class="grupo">
+			<label>:only-child</label>
+			<div class="lista3">
+				<p>Hola, soy el unico hijo de esta lista!</p>
+			</div>
+		</div>
+    <h2>pseudo clase por solo tipo</h2>
+    <div class="grupo">
+			<label>:only-of-type</label><br><br>
+			<div class="lista4">
+				<div>Hoy, soy un div.</div>
+				<p>Hola, soy el unico parrafo de esta lista!</p>
+				<div>Hoy, soy un div.</div>
+				<div>Hoy, soy un div.</div>
+			</div>
+		</div>
+    <h2>pseudo clases para formularios</h2>
+    <form class="formulario" action="">
+      <div class="grupo">
+        <label>:focus</label><br>
+        <input class="nombre" type="text" placeholder="Nombre">
+      </div>
+      <div class="grupo">
+        <label>disabled</label><br>
+        <input class="id" type="text" placeholder="Id: 1"disabled>
+      </div>
+      <div class="grupo">
+				<label>:valid / :invalid</label><br>
+				<input  class="correo" type="email" placeholder="correo@correo.com" value="correo" required>
+			</div>
+
+			<div class="grupo">
+				<label>:required</label><br>
+				<input class="mensaje" type="text" placeholder="Mensaje" value="Hola" required>
+			</div>
+
+			<div class="grupo">
+				<label>:checked</label><br>
+				<div class="radio">
+					<label><input type="checkbox" id="terminos">Acepto los terminos y condiciones</label>
+				</div>
+			</div>
+
+			<div class="grupo">
+				<label>:default</label><br>
+				<div class="checkbox">
+					<label><input type="radio" name="opcion" id="1" value="1">Opción  1</label>
+					<label><input type="radio" name="opcion" id="2" value="2" checked>Opción  2</label>
+					<label><input type="radio" name="opcion" id="3" value="3">Opción  3</label>
+				</div>
+			</div>
+
+			<div class="grupo">
+				<label>:in-range</label><br>
+				<input class="edad" type="number" placeholder="101" min="1" max="100" value="1"><br><br>
+			</div>
+
+			<button type="submit" class="boton">Registrarse</button>
+
+    </form>
+</fieldset><br>
+<fieldset>
+  <h1>prueba de un float a la derecha</h1>
+  <p><img class="float_derecha" src="leon.jpg" alt="leon" style="width:170px;height:170px;margin-left:15px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</fieldset><br>
+<fieldset>
+  <h1>prueba de un float_izquierda</h1>
+  <p><img class="float_izquierda" src="Leon.jpg" alt="Leon" style="width:170px; height:170px; margin-left:15px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</fieldset>
+<fieldset>
+  <p class="overflow">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+</fieldset><br>
+<fieldset>
+
+<i class="material-icons">home</i>
+<i class="material-icons" style="font-size:48px;">search</i>
+<i class="material-icons" style="font-size:60px;color:red;">settings</i>
+<i class="material-icons" style="font-size:70px;color:blue;">done</i>
+<i class="material-icons" style="font-size:75px;color:yellow">delete</i>
+<i class="material-icons" style="font-size:60px;color:black">info</i>
+<i class="material-icons" style="font-size:75px;color:green">fingerp</i>
+<a href="#">google.com.es</a>
+
+</fieldset><br>
+
+<fieldset>
+  <h1>Tipos de bordes</h1>
+  <p class="dotted">borde dotted</p>
+  <p class="dashed">borde dashed</p>
+  <p class="solid">borde solid</p>
+  <p class="double">borde double</p>
+  <p class="groove">borde groove</p>
+  <p class="ridge">borde ridge</p>
+  <p class="inset">borde inset</p>
+  <p class="outset">borde outset</p>
+  <p class="none">borde none</p>
+  <p class="hidden">borde hidden</p>
+  <p class="mix">borde mixed</p>
+</fieldset><br>
+<fieldset>
+  <h1>formato de texto</h1>
+  <p class="uno">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p class="dos">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p class="tres">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+</fieldset>
+
+</body>
+</html>
